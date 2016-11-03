@@ -1,0 +1,27 @@
+{
+	"name": "balancer/bors-static-git",
+	"description": "Git webhook for update static webroot",
+	"license": "GPL-3.0",
+	"homepage": "http://bors.balancer.ru/",
+
+	"authors": [
+		{
+			"name": "Balancer",
+			"email": "balancer@balancer.ru"
+		}
+	],
+
+	"require": {
+		"balancer/bors-core": "*"
+	},
+
+	"autoload": {
+		"psr-0": {
+			"B2\\Static\\Git": "src/"
+		}
+	},
+
+	"extra": {
+		"bors-route-static": ["/_bors/rpc/static-git/hook/": "B2\\Static\\Git\\Hook"],
+	}
+}
