@@ -18,13 +18,13 @@
 
 	"autoload": {
 		"psr-0": {
-			"B2\\Static\\Git": "src/"
+			"B2\\WebRoot\\Git": "src/"
 		}
 	},
 
 	"extra": {
 		"bors-route-static": {
-			"/_bors/rpc/static-git/hook/": "B2\\Static\\Git\\Hook"
+			"/_bors/rpc/webroot-git-hook/": "B2\\WebRoot\\Git\\Hook"
 		}
 	}
 }
