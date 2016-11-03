@@ -23,6 +23,8 @@
 	},
 
 	"extra": {
-		"bors-route-static": ["/_bors/rpc/static-git/hook/": "B2\\Static\\Git\\Hook"],
+		"bors-route-static": {
+			"/_bors/rpc/static-git/hook/": "B2\\Static\\Git\\Hook"
+		},
 	}
 }
